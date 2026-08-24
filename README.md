@@ -1,39 +1,22 @@
 # Front_End_Capstone
 
-A portfolio project demonstrating professional frontend engineering
-practices and AI integration capabilities.
+A responsive personal portfolio for Omolere Mojisola F., built with semantic
+HTML, CSS, and lightweight JavaScript patterns. The site presents front-end
+engineering, data control, and AI-assisted workflow case studies.
 
 ## Overview
 
-This capstone project showcases modern web development standards,
-responsive design principles, and clean code conventions. Built as a
-portfolio piece to demonstrate frontend engineering expertise, including
-HTML5, CSS3, JavaScript, and AI integration.
+The portfolio is the root-level site and includes a home page, an about page,
+and a case-studies page. The repository also retains the earlier form
+validation exercise in `files/` as a tested supporting demo.
 
 ## Features
 
-- **Form Validation** – Separated validation modules with comprehensive edge-case testing
-  - Empty field detection
-  - Email format validation with @ and domain/TLD requirements
-  - Whitespace-only input handling
-  - Message minimum length enforcement (10+ characters)
-- **Accessibility-First Design** – WCAG compliance built into forms
-  - Associated `<label>` elements for all inputs
-  - `aria-invalid` toggled on validation failure
-  - Error regions with `role="alert"` and `aria-describedby`
-  - `aria-live="polite"` for non-blocking success/error messages
-  - Keyboard navigation support
-- **Clean Code Architecture** – No inline event handlers or validation logic
-  - Validation functions separated in `files/` for Node.js test compatibility
-  - BEM naming conventions for CSS
-  - Pure validation functions (no DOM access) for unit testability
-- **Tested & Verified** – Every feature ships with passing tests
-  - Validation test suite in `files/test-validation.js`
-  - Edge case coverage (empty, invalid, boundary, whitespace inputs)
-  - Tests verify correct behavior before commit
-- **AI Integration Concepts** – Demonstrates Claude API patterns
-  - Responsive design principles
-  - Real-time optimization suggestions
+- **Portfolio sitemap** – Home, About, and Case Studies pages with shared navigation
+- **Responsive interface** – Mobile-first layouts built with CSS Grid and Flexbox
+- **Case-study presentation** – Work covering front-end engineering, data control, and AfriFit
+- **Accessible foundations** – Semantic HTML, descriptive image text, and keyboard-friendly links
+- **Legacy validation demo** – A separated, tested contact-form validation exercise in `files/`
 
 ## Tech Stack
 
@@ -59,28 +42,31 @@ cd Front_End_Capstone
 # Install dependencies
 npm install
 
-# Start development server
+# Open the portfolio
+# Use VS Code Live Server on index.html, or serve the repository root with any static server
+
+# Start the legacy validation demo
 npm start
 ```
 
 ## Scripts
 
-- `npm start`: Serve the `files/` folder with `live-server`
-- `npm run dev`: Start dev server on port 3000
-- `npm test`: Run validation tests on form inputs
-- `npm run lint`: Run ESLint on `files/**/*.js` JavaScript files
-- `npm run format`: Format `files/` with Prettier (JS, CSS, HTML)
+- `npm start`: Serve the legacy `files/` demo with Live Server
+- `npm run dev`: Serve the legacy demo on port 3000
+- `npm test`: Run the legacy form-validation tests
+- `npm run lint`: Run ESLint on JavaScript files in `files/`
+- `npm run format`: Format the legacy demo files in `files/`
 
 ## Running Tests
 
-Validation tests are located in `files/test-validation.js` and validate
-form input handling and edge cases. To execute tests locally:
+Validation tests for the legacy demo are located in `files/test-validation.js`.
+To execute them locally:
 
 ```bash
 npm test
 ```
 
-Tests verify:
+The tests verify:
 
 - Empty field rejection
 - Invalid email format detection
@@ -88,10 +74,9 @@ Tests verify:
 - Whitespace-only input handling
 - Keyboard navigation and focus management
 
-Ensure you have a recent Node.js LTS installed before running tests or
-development scripts.
+Ensure you have a recent Node.js LTS installed before running the scripts.
 
-## Form Validation Rules
+## Legacy Form Demo
 
 ### Contact Form
 
@@ -107,11 +92,16 @@ Invalid fields are marked with `aria-invalid="true"`.
 
 ```text
 Front_End_Capstone/
+├── index.html                 # Portfolio home page
+├── about.html                 # Portfolio biography and contact links
+├── project.html               # Portfolio case studies
+├── style.css                  # Shared portfolio styles
+├── img/                       # Portfolio image assets
 ├── files/
-│   ├── index.html             # Main application entry point
-│   ├── app.js                 # Application logic and event handlers
-│   ├── main.css               # Responsive styling and components
-│   ├── test-validation.js     # Form validation test suite (Node.js)
+│   ├── index.html             # Legacy validation demo
+│   ├── app.js                 # Demo event handlers
+│   ├── main.css               # Demo styles
+│   ├── test-validation.js     # Demo test suite
 │   ├── CLAUDE.md              # Local development guidelines copy
 │   ├── WORKFLOW.md            # Vague vs. precise prompting case study
 │   └── mnt/                   # Archive of previous iterations
@@ -127,23 +117,18 @@ Front_End_Capstone/
 
 ## Development Approach
 
-This capstone emphasizes **precise prompting over vague requests**. Read
-[WORKFLOW.md](./files/WORKFLOW.md) for a detailed case study: vague prompts
-result in forms with zero validation and accessibility failures; precise
-prompts with explicit test requirements catch those issues up front.
+This capstone emphasizes precise prompting, accessible interfaces, and
+testable implementation. Read [WORKFLOW.md](./files/WORKFLOW.md) for the
+prompting case study and [CLAUDE.md](./CLAUDE.md) for repository conventions.
 
-**Core principle:** Write tests first, verify behavior, *then* commit code.
-This approach ensures quality before the code ships, not after a user or
-accessibility audit finds the bugs.
-
-**Development Conventions:** See [CLAUDE.md](./CLAUDE.md) for coding standards,
-ES module structure, BEM CSS conventions, and AI assistant guidelines.
+The root portfolio is static and can be previewed with the Live Server VS Code
+extension. The npm scripts currently target the legacy demo in `files/`.
 
 ## License
 
 MIT - See [LICENSE](./LICENSE) file for details
 
-## Example: Contact Form
+## Legacy Contact Form Example
 
 The contact form demonstrates the project's core principles:
 
@@ -223,6 +208,6 @@ can be imported and tested independently of the DOM via Node.js.
 
 ---
 
-**Status:** Initial setup and project scaffolding
+**Status:** Portfolio sitemap and page layouts complete
 
-**Last updated:** 2026-08-19
+**Last updated:** 2026-08-24
