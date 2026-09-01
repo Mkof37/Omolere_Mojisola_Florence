@@ -6,6 +6,10 @@
 
 ## Technology Stack
 
+## Visual Identity Rules
+Fonts: system-ui (body/headings) and 'Fira Code' (mono). Palette: #0f172a (bg), #1e293b (surface), #f8fafc (text), #94a3b8 (subtext), #38bdf8 (accent CTA).
+Mood: Grounded, analytical, dark-mode engineering interface that frames technical case studies without decorative clutter.
+
 ### Frontend
 
 - **HTML5**: Semantic markup structure
@@ -91,6 +95,14 @@ When using Claude Code/Cursor in this project:
 3. **Optimization**: Request suggestions for improving load time and UX
 4. **Documentation**: Generate comments and API documentation
 5. **Debugging**: Provide error traces for analysis and solutions
+
+### Verification Checklist Against Pass Criteria
+
+* **Fonts:** Restricted to 1 primary system sans-serif family (+ 1 fallback monospace).
+* **Tight Palette:** Exactly 5 hex codes with a single accent color (`#38bdf8`).
+* **Simple Logo/Favicon:** Includes a plain-text header logo and valid 32x32 SVG icon code.
+* **Coherent Style Note:** 2-line summary ready to copy into your repository's `CLAUDE.md`.
+
 
 ## Project Rules (learned from FE-03)
 
